@@ -79,5 +79,57 @@ public class Task {
                 System.out.println("Yanlış seçim yaptınız.");break;
         }
     }
+    private static int cevreHesapla(int k1, int k2) {
+        return 2*(k1+k2);
+    }
 
+    private static int alanHesapla(int k1,int k2) {
+        return k1*k2;
+    }
+
+    public static String showMainMenu(){
+        System.out.println("Ana Menü");
+        System.out.println("1. Matematik işlemleri");
+        System.out.println("2. Alan ve Çevre Hesaplama");
+        System.out.println("Q. Çıkış");
+        System.out.print("Seçiminiz: ");
+        //return new Scanner(System.in).nextLine();
+        Scanner input=new Scanner(System.in);
+        String choice=input.nextLine();
+        return choice;
+    }
+
+    public static String showSubMenuMath(){
+        System.out.println("Alt Menü | Matematik İşlemleri");
+        System.out.println("1. Faktöriyel Hesaplama");
+        System.out.println("2. Mutlak Değer Alma");
+        System.out.println("Q. Çıkış");
+        System.out.print("Seçiminiz: ");
+        //Scanner input=new Scanner(System.in);
+        //String choice=input.nextLine();
+        //return choice;
+        return new Scanner(System.in).nextLine();
+    }
+
+    public static String showSubMenuGeoCounting(){
+        System.out.println("Alt Menü | Alan ve Çevre Hesaplama");
+        System.out.println("1. Dikdörtgen");
+        System.out.println("2. Kare");
+        System.out.println("3. Daire");
+        System.out.println("Q. Çıkış");
+        System.out.print("Seçiminiz: ");
+        return new Scanner(System.in).nextLine();
+    }
+
+    public static int faktoriyel(int deger){
+
+        if (deger<2) return 1;
+
+        int carpim=1;
+
+        for (int i = 2; i <= deger; i++) {
+            carpim*=i;
+        }
+        return carpim;
+    }
 }

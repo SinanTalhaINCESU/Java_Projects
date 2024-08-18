@@ -12,5 +12,13 @@ public class Program {
         k1.bilgiGoster();
 
         System.out.println();
+
+        Kopek k2=new Kopek();
+
+        k2.cinsi="Doberman";
+        k2.yasi=1;
+        k2.agirligi=3.5;
+
+        k2.bilgiGoster();
     }
 }

@@ -10,6 +10,10 @@ public class Program {
         kare2.kenar=5;
         kare2.bilgiGoster();
 
+        int toplamAlan = kare1.alanHesapla()  + kare2.alanHesapla();
+        int toplamCevre= kare1.cevreHesapla() + kare2.cevreHesapla();
 
+        System.out.println(toplamAlan);
+        System.out.println(toplamCevre);
     }
 }

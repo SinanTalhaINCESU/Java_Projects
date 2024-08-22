@@ -9,5 +9,14 @@ public class Task {
         aslan1.renk="koyu kahve";
         aslan1.boy=2.50;
         aslan1.kilo=250;
+
+        Aslan aslan2=new Aslan();
+        aslan2.tur="Asya Aslanı";
+        aslan2.cins="dişi";
+        aslan2.renk="altın";
+        aslan2.boy=2.20;
+        aslan2.kilo=220;
+
+
     }
 }

@@ -17,6 +17,8 @@ public class Task {
         aslan2.boy=2.20;
         aslan2.kilo=220;
 
-
+        aslan1.bilgiGoster();
+        System.out.println();
+        aslan2.bilgiGoster();
     }
 }

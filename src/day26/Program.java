@@ -8,5 +8,9 @@ public class Program {
         System.out.println("Sayıların Çarpımı = "+islem1.carp());
 
         System.out.println("-".repeat(22));
+
+        DortIslem islem2=new DortIslem(4,6);
+        System.out.println("Sayıların Toplamı = "+islem2.topla());
+        System.out.println("Sayıların Çarpımı = "+islem2.carp());
     }
 }

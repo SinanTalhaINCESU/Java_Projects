@@ -6,5 +6,7 @@ public class Program {
         DortIslem islem1=new DortIslem(5,7);
         System.out.println("Sayıların Toplamı = "+islem1.topla());
         System.out.println("Sayıların Çarpımı = "+islem1.carp());
+
+        System.out.println("-".repeat(22));
     }
 }
